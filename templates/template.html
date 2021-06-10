@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Flask Parent Template</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header class="buttonContainer">
+        <div class="item1">
+             <button type="button" class="buttonBase">
+                 <a class="acontent" href="{{ url_for('index') }}">INDEX</a>
+             </button>
+            <button type="button" class="buttonBase">
+             <a class="acontent" href="{{ url_for('about') }}">ABOUT</a>
+            </button>
+        </div>
+        <form method="POST" action="/" class="inputsumbitgrid">
+           <input class="inputBox" type="text" name="variable" placeholder="Search for item..."/>
+           <input class="submitButtonBase" type="submit" placeholder="SEARCH"/>
+        </form>
+    </header>
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>PAGE INDEX</title>
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <div class="contentContainer">
+    <table>
+        <tr>
+            {% for header in headers %}
+            <th class="tableHeader">{{ header }}</th>
+            {% endfor %}
+        </tr>
+
+    {% if title is not false %}
+        {% for item in title %}
+            <tr>
+                <td class="tableItemWithGrid"><img class="tableText" src="{{ item.icon }}"/>
+                    <p><a href="{{ url_for('item_view.itemview', itemid=item.id) }}" name="selecteditem" value="{{ item.name }}">{{ item.name }}</a></p>
+                </td>
+                <td class="tableItem">{{ item.member }}</td>
+                <td class="tableItem">{{ item.price }}</td>
+                <td class="tableItem">{{ item.change }}</td>
+            </tr>
+        {% endfor %}
+    {% endif %}
+    </table>
+
+    <form action="/" method="POST">
+        {% if title is not false %}
+               {% for item in pageNumber.pagenumber %}
+            <button class="pagenumber" name="pagenumber" type="submit" value="{{ item, passableData }}">{{ item }}</button>
+        {% endfor %}
+        {% else %}
+        <p>{{ pageNumber }}</p>
+    {% endif %}
+    </form>
+    </div>
+    {% endblock %}
+</body>
+</html>

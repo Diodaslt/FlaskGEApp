@@ -1,0 +1,278 @@
+.contentContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+.namedesciconContainer{
+    background: #055C9D;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-row: auto auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+}
+.chartContainer{
+    border: 3px solid darkblue;
+    display: grid;
+    grid-template-row: auto auto;
+    grid-template-columns: auto auto;
+    margin:auto;
+    margin-top: 1px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.filterContainer{
+    grid-column-end: 2;
+    margin-top: 0px;
+    nargin-left:auto;
+    padding: 10px;
+}
+.filterContainer li{
+    display: inline;
+}
+.buttonbase{
+    background-color: white;
+    border-color: #055C9D;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100px;
+}
+.buttonbase:hover{
+    background-color: gold;
+    color: white;
+}
+.current{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 10px;
+}
+.chartpricelabel{
+    background: #055C9D;
+    border: 1px solid black;
+    border-right: 0px;
+    color: gold;
+    font-weight: bold;
+    grid-column: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    padding: 10px;
+    margin-bottom: auto;
+}
+.chart{
+    border: 1px solid black;
+    border-top: 0px;
+    grid-row: 2;
+    grid-column: 1;
+    grid-column: span 2;
+    margin-top: auto;
+}
+.day30change{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    grid-row: 3;
+    padding: 10px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.day30price{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    grid-row: 3;
+    grid-column: 2;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 10px;
+}
+.day30pricechange{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    grid-row: 3;
+    grid-column: 3;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 10px;
+}
+.day90price{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    grid-row: 4;
+    grid-column: 2;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 10px;
+}
+.day90change{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    grid-row: 4;
+    margin-right: 1px;
+    padding: 10px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.day90pricechange{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    grid-row: 4;
+    grid-column: 3;
+    margin-right: 0px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 10px;
+}
+.day180change{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    grid-row: 5;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 10px;
+}
+.day180price{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    grid-row: 5;
+    grid-column: 2;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 10px;
+}
+.day180pricechange{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    grid-row: 5;
+    grid-column: 3;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 10px;
+}
+.dropdownlist{
+    border-top: 1px solid black;
+    background: #055C9D;
+    font-weight: bold;
+    grid-column: 2;
+    grid-row: 1;
+    height: 24px;
+    margin: auto;
+    margin-right: 0px;
+}
+.itemdesc{
+    background: #055C9D;
+    color: white;
+    font-weight: bold;
+    grid-column: 1;
+    grid-row: 2;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.itemicon{
+    background: #055C9D;
+    grid-column: 3;
+    grid-row: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.itemname{
+    background: #055C9D;
+    color: gold;
+    font-weight: bold;
+    font-size: 30px;
+    grid-column: 1;
+    grid-row: 1;
+    margin: auto;
+}
+.filterbutton{
+    color: black;
+    font-weight: bold;
+    margin-top: auto;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+}
+.priceDisplay{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-row: auto auto auto auto;
+    grid-row:3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.price{
+    color: white;
+    font-weight: bold;
+    grid-column: 3;
+    padding: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.pricelabel{
+    color: white;
+    font-weight: bold;
+    grid-column: 1;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 10px;
+}
+.priceandlabelborder{
+    background: #055C9D;
+    border: 1px solid black;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 1px;
+}
+.todaysChange{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    grid-row: 2;
+    grid-column: 2;
+    margin-right: 1px;
+    margin-bottom: 0px;
+    margin-top: 1px;
+    padding: 10px;
+}
+.todayspricechange{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    grid-row: 2;
+    grid-column: 2;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 10px;
+}
+.todayspricechangepercentage{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    grid-row: 2;
+    grid-column: 3;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 10px;
+}
+.trendlabel{
+    color: silver;
+    margin-right: 10px;
+}

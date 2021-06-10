@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item View</title>
+        <link rel="stylesheet" href="static/itemviewstylesheet.css">
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+
+        <div class="contentContainer">
+        {% for item in itemdetails %}
+
+            <div class="namedesciconContainer">
+                <p class="itemname">{{ item.name }}</p>
+                <p class="itemdesc">{{ item.desc }}</p>
+                <img class="itemicon" src="{{ item.icon }}"/>
+            </div>
+
+            <div class="priceDisplay">
+                <div class="priceandlabelborder">
+                    <p class="pricelabel">Current Guide Price</p>
+                    <p class="price">{{ item.actualprice }}</p>
+                </div>
+
+                <p class="current">Today's change</p>
+                <p class="todayspricechange">{{ item.todaypricechange }}</p>
+                <p class="todayspricechangepercentage">{{ item.todaychangepercent }}</p>
+
+                <p class="day30change">1 Month Change</p>
+                <p class="day30pricechange">{{ item.day30 }}</p>
+                <p class="day30price">{{ item.day30change }}</p>
+
+                <p class="day90change">3 Month Change</p>
+                <p class="day90pricechange">{{ item.day90 }}</p>
+                <p class="day90price">{{ item.day90change }}</p>
+
+                <p class="day180change">6 Month Change</p>
+                <p class="day180pricechange">{{ item.day180 }}</p>
+                <p class="day180price">{{ item.day180change }}</p>
+
+            </div>
+        </div>
+    {% endfor %}
+
+        <div class="chartContainer">
+            <p class="chartpricelabel">PRICE</p>
+            <div class="dropdownlist">
+                <ul class="filterContainer">
+                    {% for item in itemdetails %}
+                    <li class="trendlabel"><a>Trend</a></li>
+                    <li><button class="buttonbase"><a class="filterbutton" href="{{ url_for('item_view.itemview', itemid=item.itemid, filter=30) }}">30</a></button></li>
+                    <li><button class="buttonbase"><a class="filterbutton" href="{{ url_for('item_view.itemview', itemid=item.itemid, filter=90) }}">90</a></button></li>
+                    <li><button class="buttonbase"><a class="filterbutton" href="{{ url_for('item_view.itemview', itemid=item.itemid, filter=180) }}">180</a></button></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="chart">{{ chart }}</div>
+        </div>
+    {% endblock %}
+</body>
+</html>

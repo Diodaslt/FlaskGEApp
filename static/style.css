@@ -1,0 +1,139 @@
+.acontent{
+    color: #055C9D;
+    text-decoration: none;
+}
+.acontent:hover{
+    color: white;
+    text-decoration: none;
+}
+.buttonContainer{
+    border: 3px solid darkblue;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+}
+.buttonBase{
+    background-color: white;
+    border-color: #055C9D;
+    font-weight: bold;
+    margin:auto;
+    padding: 10px;
+    width: 100px;
+}
+.buttonBase:hover .acontent{
+    background-color: #055C9D;
+    color: white;
+}
+.buttonBase:active .acontent{
+    color: #055C9D;
+    background-color:white;
+}
+.buttonBase:hover{
+    background-color: #055C9D;
+    color: white;
+}
+.buttonBase:active{
+    color: #055C9D;
+    background-color:white;
+ }
+.contentContainer{
+    border: 3px solid darkblue;
+    height: 100%;
+    margin: 1px auto auto auto;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+}
+.inputBox{
+    background-color: white;
+    border-color: #055C9D;
+    height: 30px;
+    margin-left: auto;
+    margin-top: 10px;
+}
+.inputsumbitgrid{
+    align-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+.pagenumber{
+    background-color: white;
+    border-color: #055C9D;
+    color: #055C9D;
+    font-weight: bold;
+}
+.pagenumber:hover{
+    color: white;
+    background-color: #055C9D;
+}
+.pagenumber:active{
+    color: #055C9D;
+    background-color:white;
+ }
+.submitButtonBase{
+    background-color: white;
+    border-color: #055C9D;
+    color: #055C9D;
+    font-weight: bold;
+    height: 36px;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+}
+.submitButtonBase:hover{
+    color: white;
+    background-color: #055C9D;
+}
+.sumbitButtonBase:active{
+    color: #055C9D;
+    background-color:white;
+ }
+.tableHeader{
+    background-color: #055C9D;
+    border: 1px solid black;
+    padding: 8px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: left;
+    width: 100%;
+}
+.tableItemWithGrid{
+    background-color: #68BBE3;
+    border: 1px solid black;
+    color: black;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: 25% 75%;
+    text-align: left;
+}
+.tableItem{
+    background-color: #68BBE3;
+    color: black;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.tableContainer{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.tableTemplateGrid{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    text-align: left;
+}
+.tableText{
+    height: 40px;
+    width: 40px;
+    text-align: left;
+}
+
